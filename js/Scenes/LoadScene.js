@@ -9,6 +9,20 @@ export class LoadScene extends Phaser.Scene {
     init() {
     }
     preload() {
+        this.load.image('sky', 'assets/sprite/sky.png');
+        this.load.image('ground', 'assets/sprite/ground.png');
+        this.load.spritesheet('idle',
+            'assets/sprite/carapter/idle.png',
+            {frameWidth: 320, frameHeight: 320}
+        );
+        this.load.spritesheet('run',
+            'assets/sprite/carapter/run.png',
+            {frameWidth: 320, frameHeight: 320}
+        );
+
+
+
+        //load bar
         let loadingBar = this.add.graphics({
             fillStyle: {
                 color: 0x0D7DCE
@@ -35,6 +49,5 @@ export class LoadScene extends Phaser.Scene {
         this.scene.start(SCT.SCENES.GAME, "load complite");
     }
     update() {
-
     }
 }

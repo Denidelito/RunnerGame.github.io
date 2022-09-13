@@ -8,7 +8,7 @@ let game = new Phaser.Game({
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 0 },
+            gravity: { y: 320 },
             debug: false
         }
     },
@@ -16,8 +16,8 @@ let game = new Phaser.Game({
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
         min: {
-            width: 640,
-            height: 360
+            width: 320,
+            height: 568
         },
         max: {
             width: '100%',
