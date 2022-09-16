@@ -11,6 +11,7 @@ export class LoadScene extends Phaser.Scene {
     preload() {
         this.load.image('sky', 'assets/sprite/sky.png');
         this.load.image('ground', 'assets/sprite/ground.png');
+        this.load.image('npc', 'assets/sprite/npc/npc_1.png');
         this.load.spritesheet('idle',
             'assets/sprite/carapter/idle.png',
             {frameWidth: 320, frameHeight: 320}

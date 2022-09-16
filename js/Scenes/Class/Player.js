@@ -64,7 +64,6 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
         this.scaleX = 1;
     }
     jump() {
-        console.log('213')
-        this.body.setVelocityY(-500);
+        this.body.setVelocityY(-700);
     }
 }

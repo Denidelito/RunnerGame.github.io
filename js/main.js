@@ -9,7 +9,7 @@ let game = new Phaser.Game({
         default: 'arcade',
         arcade: {
             gravity: { y: 320 },
-            debug: false
+            debug: true
         }
     },
     scale: {
